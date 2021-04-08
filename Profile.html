@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" media="screen and (max-width: 790px)" href="phone.css"> 
+    <title>Website</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: cursive;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+        #logo img{
+            height: 50px;
+            margin: 12px 30px;
+            border-radius: 25px;
+        }
+        #navbar ul{
+            display: flex;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        #navbar ul li a{
+            display: block;
+            color: azure;
+            padding: 2px 20px;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+        #navbar ul li a:hover{
+            color: black;
+            background-color: aliceblue;
+            border-radius: 15px;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width:100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        #home::before{
+            content: "";
+            background: url("Logo.jpg") no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.8;
+        }
+        #home{
+            color: azure;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3px 200px;
+            height: 263px;
+        }
+        @media screen and (max-width : 540px) {
+            #home{
+                padding: 3px 85px;
+            }
+            .primary{
+                font-size: 1.5rem;
+            }
+        }
+        .primary{
+            padding: 25px;
+            font-size: 2.5rem;
+            text-shadow: -2px -2px bisque ;
+        }
+        .secondary{
+            padding: 25px;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px bisque ;
+            text-align: center;
+        }
+        .center{
+            text-align: center;
+            color: azure;
+            font-size: 2rem;
+            text-shadow: 2px 2px bisque;
+            background-color: rgb(228, 137, 137);
+            border: 3px solid azure;
+        }
+        #projects{
+            display: flex;
+            padding: 15px;     
+        }
+        #projects .box{
+            margin: 5px 5px;
+            border-radius: 22px;
+            border: 2px solid brown;
+            background-color: rgb(240, 211, 173);
+
+        }
+        #projects img {
+            display: block;
+            margin: auto;
+            height: 170px;
+            padding: 15px;
+        }
+        #container{
+            background-color:rgb(61, 60, 58);
+        }
+        .box p{
+            margin: 2px;
+            padding: 12px;
+        }
+        #profile{
+            position: relative;
+        }
+        #client{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #profile img{
+            display: block;
+            margin: auto;
+            height: 250px;
+            padding: 20px;
+        }
+        #profile p{
+            margin: 12px;
+            padding: 12px;
+        }
+        #profile::before{
+            content: "";
+            background: url("BackG.jpg")no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .client-items a{
+            color: black;
+        }
+        .footer , .fa{
+            text-decoration: none;
+            text-align: center;
+            font-size: 15px;
+            padding: 15px;
+            color:brown;
+            background-color: rgb(240, 211, 173);
+        }
+        .fa:hover{  
+            padding: 5px;  
+            text-align: center;  
+            margin: 3px 3px;  
+            font-size: 20px;  
+            width: 30px;
+        }
+        .footer #copy{
+            padding: 5px;
+            background-color: black;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Logo.jpg" alt="www.aviera.com">
+        </div>
+        <ul>
+            <li class="item"><a href="Home.html">Home</a></li>
+            <li class="item"><a href="#container">Projects</a></li>
+            <li class="item"><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class= primary>Welcome to AvierA</h1>
+    </section>
+    <section id="container">
+        <h1 class="center">Projects</h1>
+        <div id="projects">
+            <div class="box"><img src="Ai.jpg" alt="" width="250px">
+                <h2 class="secondary">Self Made Alexa</h2>
+                <p>This is a self-development project which is based on Python using various libraries and also using various APIs, the project operates on voice commands as a result it gives the output too in text as well as in speech.</p>
+            </div>
+            <div class="box"><img src="DB.png" alt="">
+                <h2 class="secondary">H.M.S</h2>
+                <p>This was school project on the hotel management system which was based on Python and MySQL with presentation in HTML. This project only requires a backend to work properly rest detailes can be updated on present skills.</p>
+            </div>
+        </div>
+    </section>
+    <section id="profile">
+        <h1 class="center">Profile</h1>
+            <div id="client">
+                <div class="client-items">
+                    <img src="Bittu.jpg" alt="My_Image">
+                    <p>I'm a first year student at <a href="http://www.iiitsurat.ac.in/" target="_blank">Indian Institute Of Information Technology, Surat</a> pursuing graduation in Bachelor of Technology in branch, Computer Science and Engineering.I have done my schooling(with +1 and +2) from Carmel School, Ambikapur(C.G.). I'm loaded with basics of C/C++, Python, HTML & CSS and MySQL, also into Competitive Programming on <a href="https://www.hackerrank.com/singhavanish2003"target="_blank"> Hackerrank</a>.</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="center">Contacts</h1>
+        <div class="footer">
+            <a href="https://www.instagram.com/_a.v.e.r.e.k_/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.facebook.com/profile.php?id=100012808840444" class="fa fa-facebook"target="_blank"></a>
+            <a href="https://www.linkedin.com/in/avanish-singh-aa1a57200/" class="fa fa-linkedin"target="_blank"></a>
+            <div id="copy">
+                Copyright &copy; www.Aviera.com All rights reserved!
+            </div>
+        </div>
+    </section>
+</body>
+</html>

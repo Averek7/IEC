@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polling Booth</title>
+    <style>
+        body{
+            float: left;
+            background: url("vote.jpg") no-repeat center center/cover;
+            z-index: -1;
+        }
+        .item{
+            display: flex;
+            border: 2px solid burlywood;
+            margin: 10px 450px;
+            border-radius: 20px;
+            background-color: rgba(53, 131, 194, 0.651);
+            opacity: 0.95;
+        }
+        .item img{
+            width: 95px;
+        }
+        .item label{
+            margin: 10px;
+        }
+        .item p{
+            float: right;
+            text-align: center;
+            margin: 5px 13px;
+            padding: 30px;
+            font-size: 1.1rem;
+        }
+        .item input{
+            margin: 45px 40px;
+        } 
+        .button{
+            text-align: center;
+        }
+        .button button{
+            margin: 20px;
+            padding: 15px;
+            border-radius: 25px;
+            box-shadow: 2px 2px slategray;
+            cursor: pointer;
+        }
+        @media screen and (max-width:1500px){
+            
+            .item img{
+                width:65px;
+            }
+            .item{
+                margin: 0px;
+            }
+            .item p{
+                padding: 10px 10px;
+                font-size: 8.5px;
+            }
+            .item input{
+                margin: 35px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="item">
+            <label for="poll"><img src="bjp.png" alt="BJP"><p>Bhartiya Janta Party</p></label>
+            <input type="radio" name="poll" id="confirm">
+        </div>
+        <div class="item">
+            <label for="poll"><img src="inc.png" alt="INC"><p>Indian National Congress</p></label>
+            <input type="radio" name="poll" id="confirm">
+        </div>
+        <div class="item">
+            <label for="poll"><img src="aap.png" alt="AAP"><p>Aam Aadmi Party</p></label>
+            <input type="radio" name="poll" id="AAP">
+        </div>
+        <div class="item">
+            <label for="poll"><img src="bsp.png" alt="BSP"><p>Bahujan Samaj Party</p></label>
+            <input type="radio" name="poll" id="BSP">
+        </div>
+        <div class="item">
+            <label for="poll"><img src="aitc.png" alt="AITC"><p>All India Trinamool Congress</p></label>
+            <input type="radio" name="poll" id="AITC">
+        </div>
+        <div class="item">
+            <label for="poll"><img src="shiv sena.png" alt="Shiv Sena"><p>Shiv Sena</p></label>
+            <input type="radio" name="poll" id="Shiv Sena">
+        </div>    
+        <div class="item">
+            <label for="poll"><img src="sp.png" alt="SP"><p>Samajwadi Party</p></label>
+            <input type="radio" name="poll" id="SP">
+        </div>    
+        <div class="item">
+            <label for="poll"><img src="aimim.png" alt="AIMIM"><p>All India Majlis-e-Ittehadul Muslimeen</p></label>
+            <input type="radio" name="poll" id="AIMIM">
+        </div>    
+    </section>
+        
+    <section>
+        <div class="button">
+            <button type="submit">Confirm</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </section>
+</body>
+</html>

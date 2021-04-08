@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | IEC-India</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: cursive;
+        }
+        #navbar{
+            position: relative;
+        }
+        #navbar ul{
+            display: flex;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 1.2rem;
+            
+        }
+        #navbar ul li a{
+            display: block;
+            color: azure;
+            text-decoration: none;
+            padding: 5px 20px;
+            margin: 10px;
+        }
+        #navbar ul li a:hover , .dropdown:hover {
+            border-radius: 25px;
+            background-color: azure;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            color: rgb(15, 15, 15);
+        }
+        #navbar::after{
+            content: "";
+            background-color: rgb(44 150 225 / 75%);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+        body{
+            background: url("Home.jpg") no-repeat center center/cover;
+            height:100%;
+            width: 100%;
+        }
+        h1{
+            max-width: 100%;
+            text-align: center;
+            margin: 12px auto;
+            display: flex;
+            justify-content: center;
+            color: azure;
+        }
+        #home p{
+            margin: 12px 40px;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.15rem;
+        }
+        .primary{
+            padding: 15px;
+            font-size: 2rem;
+            text-shadow: 2px 2px rgb(44 150 225 / 75%);
+            box-shadow: -0.1px -0.1px 2px 2px  rgb(44 150 225 / 75%);
+        }
+        .secondary{
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px rgb(44 150 225 / 75%);
+        }
+        h2{
+            color: rgb(44 150 225 / 75%);
+        }
+        #container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto 30px;
+            height: 450px;
+        }
+        .box{
+            margin:15px;
+        }
+        .box p{
+            text-align: center;
+            margin: 10px;
+            padding: 5px 15px;
+        }
+        #button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        #button input{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        footer{
+            text-align: center;
+            background-color: black;
+            color: azure;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            color: azure;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropbtn:hover{
+            background-color: azure;
+            color: black;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(44 150 225 / 75%);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li class="items"><a href="Login.html">Login/Sign-In</a></li>
+            <li class="items"><a href="Register.html">Sign-Up/Register</a></li>
+            <li class="items"><a href="https://eci.gov.in/about/about-eci/">About Us</a></li>
+            <li class="items">
+            <div class="dropdown">
+                <button class="dropbtn">Contact us
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Alok</a>
+                  <a href="Profile.html">Avanish</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section id="home">
+        <h1 class="primary">Welocme to I.E.C-India</h1>
+        <p>E-voting portal, is an initiative to make democracy and technology together. It can be done by providing username and password to each and every eligilble (above 18) person, This voting system can make voting easier and comfortable for every individual.</p>
+    </section>
+    <section id="container">
+        <div class="box">
+            <h2 class="secondary">Sign-In/Login-In</h2>
+            <p>Enter your Username and Password</p>
+            <p>If you are not having your Username, Kindly Register in order to get your Username.</p>
+        </div>
+        <div class="box">
+            <h2 class="secondary">Sign-Up/Register</h2>
+            <p>Fill details</p>
+            <p>Follow the steps by providing your personal information to activate your given username and set your respective password.
+            Once details are filled we can activate your acount.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; All rights are reserved</p>
+    </footer>
+</body>
+</html>
