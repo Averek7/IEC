@@ -1,2 +1,3 @@
 # IEC
-Open Home.html in your ide or webpage to view the pages
+Download first then --->
+----> Open Home.html in your ide or webpage to view the pages
